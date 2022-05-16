@@ -26,15 +26,15 @@ on:
 #        - uses: actions/checkout@v2
 #        - uses: akhileshns/heroku-deploy@v3.12.12
 #          with:
-#            heroku_api_key: ${{secrets.HEROKU_API_KEY}} # The API key for the account from heroku
-#            heroku_app_name: "<github-account-name>-node-app-staging" # The name of the staging application created in heroku
-#            heroku_email: "<account>@github.com" # The emailID registered with heroku.
+#            heroku_api_key: ${{secrets.HEROKU_API_KEY}} #TODO: Add API key for the heroku account as a repo secret
+#            heroku_app_name: "<github-account-name>-node-app-staging" #TODO: Update the name of the staging application created in heroku
+#            heroku_email: "<account>@github.com" #TODO: Update the emailID registered with heroku.
 #    trigger_e2e_tests:
 #      needs: deploy-staging
 #      runs-on: ubuntu-latest
 #      steps:
-#        # Replace the remote origin url with the account or organization where you are forking the repository to.
-#        # REPO_PUSH_TOKEN is a PAT token that should be created with the repo scope.
+#        # TODO: Replace the remote origin url with the account or organization where you are forking the repository to.
+#        # TODO: REPO_PUSH_TOKEN is a PAT token that should be created with the repo scope and stored as a repo secret
 #        - name: Pull E2E tests suite
 #          run: |
 #            cd ../
@@ -57,6 +57,6 @@ on:
 #        - uses: actions/checkout@v2
 #        - uses: akhileshns/heroku-deploy@v3.12.12
 #          with:
-#            heroku_api_key: ${{secrets.HEROKU_API_KEY}} # The API key for the account from heroku
-#            heroku_app_name: "<github-account-name>-node-app" # The name of the staging application created in heroku
-#            heroku_email: "<account>@github.com" # The emailID registered with heroku.
+#            heroku_api_key: ${{secrets.HEROKU_API_KEY}} #TODO: Add API key for the heroku account as a repo secret
+#            heroku_app_name: "<github-account-name>-node-app" #TODO: Update the name of the staging application created in heroku
+#            heroku_email: "<account>@github.com" #TODO: Update the emailID registered with heroku.
